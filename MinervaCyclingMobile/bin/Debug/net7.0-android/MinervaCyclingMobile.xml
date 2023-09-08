@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MinervaCyclingMobile</name>
+    </assembly>
+    <members>
+        <member name="P:MinervaCyclingMobile.CustomControls.CustomEntry.Padding">
+            <summary>
+            This property cannot be changed at runtime in iOS.
+            </summary>
+        </member>
+    </members>
+</doc>
