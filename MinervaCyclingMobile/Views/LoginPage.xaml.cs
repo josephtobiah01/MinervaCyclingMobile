@@ -1,3 +1,5 @@
+using CommunityToolkit.Maui.Core.Platform;
+
 namespace MinervaCyclingMobile.Views;
 
 public partial class LoginPage : ContentPage
@@ -7,7 +9,7 @@ public partial class LoginPage : ContentPage
 		InitializeComponent();
 
 		//signUpLabel.FontFamily = "RobotoItalic";
-		
+
 
     }
 

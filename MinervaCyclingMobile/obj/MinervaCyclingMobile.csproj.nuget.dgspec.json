@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobile\\MinervaCyclingMobile\\MinervaCyclingMobile.csproj": {}
+    "C:\\Users\\joseph.alulod\\source\\github_repo\\MinervaCyclingMobile\\MinervaCyclingMobile.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobile\\MinervaCyclingMobile\\MinervaCyclingMobile.csproj": {
+    "C:\\Users\\joseph.alulod\\source\\github_repo\\MinervaCyclingMobile\\MinervaCyclingMobile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobile\\MinervaCyclingMobile\\MinervaCyclingMobile.csproj",
+        "projectUniqueName": "C:\\Users\\joseph.alulod\\source\\github_repo\\MinervaCyclingMobile\\MinervaCyclingMobile.csproj",
         "projectName": "MinervaCyclingMobile",
-        "projectPath": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobile\\MinervaCyclingMobile\\MinervaCyclingMobile.csproj",
+        "projectPath": "C:\\Users\\joseph.alulod\\source\\github_repo\\MinervaCyclingMobile\\MinervaCyclingMobile.csproj",
         "packagesPath": "C:\\Users\\joseph.alulod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobile\\MinervaCyclingMobile\\obj\\",
+        "outputPath": "C:\\Users\\joseph.alulod\\source\\github_repo\\MinervaCyclingMobile\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -63,6 +63,10 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[7.0.92, )",
@@ -90,7 +94,7 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.0.0-preview.7.23375.6, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -186,6 +190,10 @@
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[7.0.92, )",
@@ -213,7 +221,7 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.0.0-preview.7.23375.6, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -254,6 +262,10 @@
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[7.0.92, )",
@@ -281,7 +293,7 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.0.0-preview.7.23375.6, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -323,6 +335,10 @@
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[7.0.92, )",
@@ -350,7 +366,7 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.0.0-preview.7.23375.6, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",

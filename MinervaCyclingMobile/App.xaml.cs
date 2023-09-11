@@ -1,4 +1,6 @@
-﻿using MinervaCyclingMobile.Views;
+﻿using MinervaCyclingMobile.CustomControls;
+using MinervaCyclingMobile.Views;
+
 
 namespace MinervaCyclingMobile
 {
@@ -8,7 +10,9 @@ namespace MinervaCyclingMobile
         {
             InitializeComponent();
 
-            MainPage = new LoginPage();
+            
+
+            MainPage = new AppShell();
         }
     }
 }

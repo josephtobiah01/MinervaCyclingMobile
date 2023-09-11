@@ -5,10 +5,10 @@ namespace MinervaCyclingMobile.CustomControls
     public sealed class CustomEntry : Entry
     {
         public static BindableProperty CornerRadiusProperty =
-            BindableProperty.Create(nameof(CornerRadius), typeof(double), typeof(CustomEntry), 0.0);
+            BindableProperty.Create(nameof(CornerRadius), typeof(float), typeof(CustomEntry), 0.0);
 
         public static BindableProperty BorderThicknessProperty =
-            BindableProperty.Create(nameof(BorderThickness), typeof(double), typeof(CustomEntry), 0.0);
+            BindableProperty.Create(nameof(BorderThickness), typeof(float), typeof(CustomEntry), 0.0);
 
         public static BindableProperty PaddingProperty =
             BindableProperty.Create(nameof(Padding), typeof(Thickness), typeof(CustomEntry), new Thickness(5));
@@ -19,15 +19,15 @@ namespace MinervaCyclingMobile.CustomControls
         public static BindableProperty CustomHeightProperty =
             BindableProperty.Create(nameof(CustomHeight), typeof(int), typeof(CustomEntry), 0);
 
-        public double CornerRadius
+        public float CornerRadius
         {
-            get => (double)GetValue(CornerRadiusProperty);
+            get => (float)GetValue(CornerRadiusProperty);
             set => SetValue(CornerRadiusProperty, value);
         }
 
-        public double BorderThickness
+        public float BorderThickness
         {
-            get => (double)GetValue(BorderThicknessProperty);
+            get => (float)GetValue(BorderThicknessProperty);
             set => SetValue(BorderThicknessProperty, value);
         }
         public Color BorderColor

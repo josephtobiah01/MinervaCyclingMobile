@@ -3,32 +3,5 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MinervaCyclingMobile"
              x:Class="MinervaCyclingMobile.App">
-    <Application.Resources>
-        <ResourceDictionary>
-
-            <!--<Style x:Name="LabelFontFamily_Regular" TargetType="Label" x:Key="LabelFontFamily_Regular">
-                <Setter Property="FontFamily" Value="{OnPlatform Android=Roboto-Regular.ttf, iOS=HelveticaNeue-Regular.otf}"/>
-            </Style>
-
-            <Style x:Name="LabelFontFamily_Italic" TargetType="Label" x:Key="LabelFontFamily_Italic">
-                <Setter Property="FontFamily" Value="{OnPlatform Android=Roboto-Italic.ttf, iOS=HelveticaNeue-Italic.ttf}"/>
-            </Style>-->
-
-            <Color x:Key="PageBackgroundColor">#512bdf</Color>
-            <Color x:Key="PrimaryTextColor">White</Color>
-
-            <Style TargetType="Label">
-                <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
-                <Setter Property="FontFamily" Value="OpenSansRegular" />
-            </Style>
-
-            <Style TargetType="Button">
-                <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
-                <Setter Property="FontFamily" Value="OpenSansRegular" />
-                <Setter Property="BackgroundColor" Value="#2b0b98" />
-                <Setter Property="Padding" Value="14,10" />
-            </Style>
-
-        </ResourceDictionary>
-    </Application.Resources>
+    
 </Application>
