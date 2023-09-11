@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:MinervaCyclingMobileApp.CustomControls"
+             x:Class="MinervaCyclingMobileApp.Views.LoginPage"
+             Title="LoginPage">
+    
+    
+    <VerticalStackLayout 
+        Spacing="15" 
+        Padding="30,0" 
+        VerticalOptions="Center">
+
+        <Image 
+            Source="minervalogo" 
+            HeightRequest="150" 
+            WidthRequest="150"
+            Margin="5"/>
+
+        <Grid
+            ColumnDefinitions="*,2*"
+            RowDefinitions="*,2*"
+            ColumnSpacing="3"
+            RowSpacing="7"
+            Margin="5,2,5,7">
+
+            <!--<Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Text="Email"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            TextColor="Black"/>-->
+
+            <custom:CustomEntry
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BorderColor="#2F4F4F"
+                TextColor="Black"
+                BorderThickness="1"
+                ClearButtonVisibility="WhileEditing"
+                CornerRadius="20"
+                Placeholder="Email address"
+                PlaceholderColor="#A9A9A9"/>
+
+            <!--<Label
+            Grid.Row="1"
+            Grid.Column="0"
+            Text="Password"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            TextColor="Black"/>-->
+
+            <custom:CustomEntry
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BorderColor="#2F4F4F"
+                TextColor="Black"
+                BorderThickness="1"
+                ClearButtonVisibility="WhileEditing"
+                CornerRadius="20"
+                Placeholder="Password"
+                PlaceholderColor="#A9A9A9"/>
+
+        </Grid>
+
+        <Button
+            Text="Sign In"
+            TextColor="White"
+            BackgroundColor="#0000CD"
+            CornerRadius="20"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            Margin="5,3"
+            WidthRequest="150"/>
+
+        <Label
+            Text="Forgot Password"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Opacity=".8"
+            TextColor="#4169E1"
+            Margin="5,0,5,7"
+            FontSize="15"
+            Padding="7">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="Android" Value="Roboto-Italic.ttf"/>
+                    <On Platform="iOS" Value="HelveticaNeueItalic"/>
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+        <Label
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontAutoScalingEnabled="False">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span 
+                        Text="Don't have an account yet? "
+                        TextColor="#2F4F4F">
+                        <Span.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="HelveticaNeueRegular"/>
+                                <On Platform="Android" Value="RobotoRegular"/>
+                            </OnPlatform>
+                        </Span.FontFamily>
+                    </Span>
+                    <Span
+                        Text="Sign Up"
+                        TextColor="#4169E1"
+                        FontSize="15"
+                        x:Name="signUpLabel">
+                        <Span.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="HelveticaNeueItalic"/>
+                                <On Platform="Android" Value="RobotoItalic"/>
+                            </OnPlatform>
+                        </Span.FontFamily>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+    </VerticalStackLayout>
+</ContentPage>
