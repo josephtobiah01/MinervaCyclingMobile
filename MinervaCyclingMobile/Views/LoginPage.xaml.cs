@@ -6,7 +6,7 @@ public partial class LoginPage : ContentPage
 {
 	public LoginPage()
 	{
-		InitializeComponent();
+        InitializeComponent();
 
 		//signUpLabel.FontFamily = "RobotoItalic";
 

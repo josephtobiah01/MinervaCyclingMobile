@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using MinervaCyclingMobile.CustomControls;
 using MinervaCyclingMobile.Data;
 using MinervaCyclingMobile.Platforms;
-
+using MinervaCyclingMobile.Views;
 
 namespace MinervaCyclingMobile
 {
@@ -37,9 +37,8 @@ namespace MinervaCyclingMobile
 
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
-		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddTransient<LoginPage>();
             builder.Services.AddSingleton<WeatherForecastService>();
 
             Microsoft.Maui.Handlers.ElementHandler.ElementMapper.AppendToMapping("Classic", (handler, view) =>

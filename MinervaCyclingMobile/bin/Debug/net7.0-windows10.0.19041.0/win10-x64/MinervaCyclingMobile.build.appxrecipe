@@ -676,9 +676,6 @@
     <AppxPackagedFile Include="C:\Users\joseph.alulod\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\lib\net7.0\Microsoft.Extensions.Logging.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joseph.alulod\.nuget\packages\microsoft.extensions.logging.debug\7.0.0\lib\net7.0\Microsoft.Extensions.Logging.Debug.dll">
-      <PackagePath>Microsoft.Extensions.Logging.Debug.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\joseph.alulod\.nuget\packages\microsoft.extensions.options\7.0.0\lib\net7.0\Microsoft.Extensions.Options.dll">
       <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
     </AppxPackagedFile>

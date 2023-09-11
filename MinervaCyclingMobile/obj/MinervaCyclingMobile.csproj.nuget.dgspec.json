@@ -32,8 +32,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/SWpbtZGlTt4fNnE7laHq2FscCs7PjDnKdqgeXAZieRMo2dmE7Y/api": {},
-          "https://pkgs.dev.azure.com/AgeInReverse/_packaging/AirPackages-Development/nuget/v3/index.json": {}
+          "https://nuget.devexpress.com/SWpbtZGlTt4fNnE7laHq2FscCs7PjDnKdqgeXAZieRMo2dmE7Y/api": {}
         },
         "frameworks": {
           "net7.0-android33.0": {
@@ -91,10 +90,6 @@
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[8.0.0-preview.7.23375.6, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -219,10 +214,6 @@
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[8.0.0-preview.7.23375.6, )"
-            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.92, )",
@@ -290,10 +281,6 @@
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[8.0.0-preview.7.23375.6, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -363,10 +350,6 @@
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[8.0.0-preview.7.23375.6, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
