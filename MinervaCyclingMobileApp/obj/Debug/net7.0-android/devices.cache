@@ -1,1 +1,1 @@
-<Devices><Device id="192.168.1.2:5555"><ResultingAbi>arm64-v8a</ResultingAbi><ToolsAbi /><SdkVersion>33</SdkVersion><LongOutput>product:a34xdxx;model:SM_A346E;device:a34x;transport_id:2</LongOutput></Device></Devices>
+<Devices><Device id="192.168.1.2:5555"><ResultingAbi>arm64-v8a</ResultingAbi><ToolsAbi /><SdkVersion>33</SdkVersion><LongOutput>product:a34xdxx;model:SM_A346E;device:a34x;transport_id:1</LongOutput></Device></Devices>

@@ -1,8 +1,10 @@
 ﻿
+using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 using MinervaCyclingMobileApp.CustomControls;
 using MinervaCyclingMobileApp.Data;
-using MinervaCyclingMobileApp.Platforms;
+
+
 using MinervaCyclingMobileApp.Views;
 
 namespace MinervaCyclingMobileApp
@@ -14,6 +16,7 @@ namespace MinervaCyclingMobileApp
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -41,7 +44,7 @@ namespace MinervaCyclingMobileApp
             {
                 if (view is CustomEntry)
                 {
-                    CustomEntryMapper.Map(handler, view);
+                    Platforms.CustomEntryMapper.Map(handler, view);
                 }
             });
 

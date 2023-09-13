@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o/AnYtRXsoC/W4vAx+yDa42OLLIIVccW8RGcuPv2P7w=",
+  "Hash": "yfpmgWVpo/DYqWOk+2zdAHspli9E8/ul1NFKzioCZDI=",
   "Source": "MinervaCyclingMobileApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-android\\scopedcss\\bundle\\MinervaCyclingMobileApp.styles.css",
-      "SourceId": "MinervaCyclingMobileApp",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-android\\scopedcss\\bundle\\",
-      "BasePath": "/",
-      "RelativePath": "MinervaCyclingMobileApp.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-android\\scopedcss\\bundle\\MinervaCyclingMobileApp.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-android\\scopedcss\\projectbundle\\MinervaCyclingMobileApp.bundle.scp.css",
-      "SourceId": "MinervaCyclingMobileApp",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-android\\scopedcss\\projectbundle\\",
-      "BasePath": "/",
-      "RelativePath": "MinervaCyclingMobileApp.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-android\\scopedcss\\projectbundle\\MinervaCyclingMobileApp.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\wwwroot\\css\\app.css",
       "SourceId": "MinervaCyclingMobileApp",

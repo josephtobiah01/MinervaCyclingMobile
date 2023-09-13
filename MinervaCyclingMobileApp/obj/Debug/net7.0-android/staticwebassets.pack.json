@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-android\\scopedcss\\bundle\\MinervaCyclingMobileApp.styles.css",
-      "PackagePath": "staticwebassets\\MinervaCyclingMobileApp.styles.css"
-    },
-    {
       "Id": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

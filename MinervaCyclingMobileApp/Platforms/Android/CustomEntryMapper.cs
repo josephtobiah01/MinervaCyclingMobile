@@ -4,11 +4,6 @@ using Microsoft.Maui.Controls.Platform;
 using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
 using MinervaCyclingMobileApp.CustomControls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MinervaCyclingMobileApp.Platforms
 {

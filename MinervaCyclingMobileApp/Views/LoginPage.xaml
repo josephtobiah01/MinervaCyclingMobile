@@ -2,8 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:custom="clr-namespace:MinervaCyclingMobileApp.CustomControls"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="MinervaCyclingMobileApp.Views.LoginPage"
-             Title="LoginPage">
+             Title="LoginPage"
+             BackgroundColor="{AppThemeBinding Dark=white, Light=white}">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{AppThemeBinding Dark=white, Light=white}" StatusBarStyle="DarkContent"/>
+    </ContentPage.Behaviors>
     
     
     <VerticalStackLayout 
@@ -13,8 +19,8 @@
 
         <Image 
             Source="minervalogo" 
-            HeightRequest="150" 
-            WidthRequest="150"
+            HeightRequest="200" 
+            WidthRequest="250"
             Margin="5"/>
 
         <Grid
@@ -69,7 +75,7 @@
         <Button
             Text="Sign In"
             TextColor="White"
-            BackgroundColor="#0000CD"
+            BackgroundColor="{StaticResource Primary}"
             CornerRadius="20"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="Center"
@@ -111,7 +117,7 @@
                     </Span>
                     <Span
                         Text="Sign Up"
-                        TextColor="#4169E1"
+                        TextColor="{StaticResource Primary}"
                         FontSize="15"
                         x:Name="signUpLabel">
                         <Span.FontFamily>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2C7mWRjlFNqrw3QNu4yn5zZrKFiGxcAC7nzH1WCiAYQ=",
+  "Hash": "iXZM5AF3OK0FWL3Rs+V57l5/jPF2ye/DC53puEIkgMs=",
   "Source": "MinervaCyclingMobileApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\MinervaCyclingMobileApp.styles.css",
-      "SourceId": "MinervaCyclingMobileApp",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\",
-      "BasePath": "/",
-      "RelativePath": "MinervaCyclingMobileApp.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\MinervaCyclingMobileApp.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-maccatalyst\\maccatalyst-x64\\scopedcss\\projectbundle\\MinervaCyclingMobileApp.bundle.scp.css",
-      "SourceId": "MinervaCyclingMobileApp",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-maccatalyst\\maccatalyst-x64\\scopedcss\\projectbundle\\",
-      "BasePath": "/",
-      "RelativePath": "MinervaCyclingMobileApp.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\obj\\Debug\\net7.0-maccatalyst\\maccatalyst-x64\\scopedcss\\projectbundle\\MinervaCyclingMobileApp.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\joseph.alulod\\source\\repos\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp\\wwwroot\\css\\app.css",
       "SourceId": "MinervaCyclingMobileApp",
