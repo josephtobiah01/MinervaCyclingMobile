@@ -18,6 +18,8 @@ namespace MinervaCyclingMobileApp.Platforms
 
                 var gd = new GradientDrawable();
 
+                
+
                 gd.SetCornerRadius((int)handler.MauiContext?.Context.ToPixels(viewData.CornerRadius));
 
                 gd.SetStroke((int)handler.MauiContext?.Context.ToPixels(viewData.BorderThickness), viewData.BorderColor.ToAndroid());

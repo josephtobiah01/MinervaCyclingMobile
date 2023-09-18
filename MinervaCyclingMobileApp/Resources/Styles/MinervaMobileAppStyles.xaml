@@ -7,6 +7,9 @@
     <Color x:Key="TextColor">#000000</Color>
     <Color x:Key="TextColorDark">White</Color>
 
+    <Color x:Key="DarkMode">White</Color>
+    <Color x:Key="LightMode">White</Color>
+
     <Color x:Key="WindowBackgroundColor">#f2f2f7</Color>
     <Color x:Key="WindowBackgroundColorDark">Black</Color>
 
@@ -65,8 +68,7 @@
 
     <Style x:Key="BaseLabel" TargetType="Label">
         <Setter Property="TextColor" 
-                Value="{AppThemeBinding Dark={StaticResource TextColorDark},
-            Light={StaticResource TextColor}}" />
+                Value="{AppThemeBinding Dark={StaticResource TextColorDark}, Light={StaticResource TextColor}}" />
     </Style>
 
     <Style x:Key="LabelMicro" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
@@ -85,16 +87,14 @@
     </Style>
 
     <Style x:Key="ButtonOutline" TargetType="Button">
-        <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource TextColorDark},
-            Light={StaticResource TextColor}}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource DarkMode}, Light={StaticResource TextColor}}" />
         <Setter Property="WidthRequest" Value="150" />
         <Setter Property="HeightRequest" Value="{OnPlatform iOS=30, Android=40, Default=40}" />
         <Setter Property="FontSize" Value="Small" />
         <Setter Property="CornerRadius" Value="6" />
         <Setter Property="BorderWidth" Value="1" />
         <Setter Property="BackgroundColor" Value="Transparent" />
-        <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource TextColorDark},
-            Light={StaticResource TextColor}}" />
+        <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource DarkMode}, Light={StaticResource LightMode}}" />
         <Setter Property="HorizontalOptions" Value="Center" />
     </Style>
 
@@ -106,4 +106,7 @@
                 Value="{AppThemeBinding Dark={StaticResource CardBackgroundDark},
             Light={StaticResource CardBackground}}"/>
     </Style>
+
+    
+
 </ResourceDictionary>

@@ -1,11 +1,12 @@
-﻿
+﻿using MinervaCyclingMobileApp.Services;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 using MinervaCyclingMobileApp.CustomControls;
 using MinervaCyclingMobileApp.Data;
-
-
+using MinervaCyclingMobileApp.Interfaces;
 using MinervaCyclingMobileApp.Views;
+using MinervaCyclingMobileApp.Views.SignUp;
+using MinervaCyclingMobileApp.ViewModels;
 
 namespace MinervaCyclingMobileApp
 {
@@ -32,6 +33,9 @@ namespace MinervaCyclingMobileApp
                     fonts.AddFont("HelveticaNeue67-MediumCondensed.otf", "HelveticaNeueMediumCondesed");
                     fonts.AddFont("HelveticaNeue97-BlackCondensed.otf", "HelveticaNeueBlackCondensed");
                     fonts.AddFont("HelveticaNeue-CondensedBold.ttf", "HelveticaNeueCondesedBold");
+                    fonts.AddFont("faregular.ttf", "FAR");
+                    fonts.AddFont("fasolid.ttf", "FAS");
+                    fonts.AddFont("fabrands.ttf", "FAB");
                 });
 
             builder.Services.AddMauiBlazorWebView();
@@ -48,12 +52,32 @@ namespace MinervaCyclingMobileApp
                 }
             });
 
+            SetupServices(builder.Services);
+            RegisterNavigation();
+
             builder.Services.AddSingleton<WeatherForecastService>();
 
             builder.Services.AddTransient<LoginPage>();
+            builder.Services.AddTransient<LoginPageViewModel>();
             
+            builder.Services.AddTransient<NameAndDobPage>();
+            builder.Services.AddTransient<NameAndDobPageViewModel>();
 
             return builder.Build();
+        }
+
+        private static void SetupServices(IServiceCollection services)
+        {
+            services.AddSingleton<INavigationService, NavigationService>();
+            services.AddSingleton<IAuthenticationService, AuthenticationService>();
+        }
+
+
+        private static void RegisterNavigation()
+        {
+            RegisterForNavigation.Register<LoginPage>();
+            RegisterForNavigation.Register<NameAndDobPage>();
+
         }
     }
 }

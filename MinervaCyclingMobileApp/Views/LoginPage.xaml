@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:custom="clr-namespace:MinervaCyclingMobileApp.CustomControls"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:viewmodels="clr-namespace:MinervaCyclingMobileApp.ViewModels"
+             x:DataType="viewmodels:LoginPageViewModel"
              x:Class="MinervaCyclingMobileApp.Views.LoginPage"
              Title="LoginPage"
              BackgroundColor="{AppThemeBinding Dark=white, Light=white}">
@@ -47,8 +49,9 @@
                 BorderThickness="1"
                 ClearButtonVisibility="WhileEditing"
                 CornerRadius="20"
-                Placeholder="Email address"
-                PlaceholderColor="#A9A9A9"/>
+                Placeholder="Email"
+                PlaceholderColor="#A9A9A9"
+                Text="{Binding Email}"/>
 
             <!--<Label
             Grid.Row="1"
@@ -68,7 +71,8 @@
                 ClearButtonVisibility="WhileEditing"
                 CornerRadius="20"
                 Placeholder="Password"
-                PlaceholderColor="#A9A9A9"/>
+                PlaceholderColor="#A9A9A9"
+                Text="{Binding Password}"/>
 
         </Grid>
 
@@ -80,7 +84,8 @@
             HorizontalOptions="FillAndExpand"
             VerticalOptions="Center"
             Margin="5,3"
-            WidthRequest="150"/>
+            WidthRequest="150"
+            Command="{Binding Login}"/>
 
         <Label
             Text="Forgot Password"
@@ -129,6 +134,9 @@
                     </Span>
                 </FormattedString>
             </Label.FormattedText>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding SignUp}"/>
+            </Label.GestureRecognizers>
         </Label>
 
     </VerticalStackLayout>

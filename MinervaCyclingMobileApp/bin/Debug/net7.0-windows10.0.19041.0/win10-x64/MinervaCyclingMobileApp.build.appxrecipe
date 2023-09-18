@@ -820,6 +820,15 @@
     <AppxPackagedFile Include="C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\fabrands.ttf">
+      <PackagePath>fabrands.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\faregular.ttf">
+      <PackagePath>faregular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\fasolid.ttf">
+      <PackagePath>fasolid.ttf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\HelveticaNeue-CondensedBold.ttf">
       <PackagePath>HelveticaNeue-CondensedBold.ttf</PackagePath>
     </AppxPackagedFile>

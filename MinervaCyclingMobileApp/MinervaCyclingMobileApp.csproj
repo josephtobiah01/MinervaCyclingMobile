@@ -55,6 +55,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Remove="Resources\Fonts\fabrands.ttf" />
+      <None Remove="Resources\Fonts\faregular.ttf" />
+      <None Remove="Resources\Fonts\fasolid.ttf" />
       <None Remove="Resources\Fonts\HelveticaNeue-CondensedBold.ttf" />
       <None Remove="Resources\Fonts\HelveticaNeue-Italic.ttf" />
       <None Remove="Resources\Fonts\HelveticaNeue-Regular.otf" />
@@ -96,6 +99,9 @@
         <Generator></Generator>
       </MauiXaml>
       <MauiXaml Update="Views\LoginPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\SignUp\NameAndDobPage.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
     </ItemGroup>

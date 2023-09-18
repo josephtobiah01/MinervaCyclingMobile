@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MinervaCyclingMobileApp.Views.SignUp.NameAndDobPage"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:custom="clr-namespace:MinervaCyclingMobileApp.CustomControls"
+    xmlns:fontAwesome="clr-namespace:FontAwesome"
+    xmlns:viewmodels="clr-namespace:MinervaCyclingMobileApp.ViewModels"
+    x:DataType="viewmodels:NameAndDobPageViewModel"
+    BackgroundColor="{AppThemeBinding Dark=white, Light=white}"
+    Shell.NavBarIsVisible="False">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{AppThemeBinding Dark=white, Light=white}" StatusBarStyle="DarkContent"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout>
+
+        <Image
+            Source="{FontImage FontFamily=FAS, Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowLeft}, Color=#000000}"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            HeightRequest="20"
+            WidthRequest="20"
+            Margin="15,15">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoBack}"/>
+            </Image.GestureRecognizers>
+        </Image>
+        
+        <Label 
+            Text="What is your name and date of birth?"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="15,25"
+            TextColor="{StaticResource Primary}"
+            FontSize="Large"
+            FontFamily="{OnPlatform Android=RobotoBold, iOS=HelveticaNeueCondesedBold}"/>
+
+        <Label
+            x:Name="firstNameLabel"
+            Text="First Name"
+            Margin="15,7"
+            FontSize="15"
+            HorizontalOptions="Start"
+            HorizontalTextAlignment="Start"
+            TextColor="Black"
+            FontFamily="{OnPlatform Android=RobotoRegular, iOS=HelveticaNeueRegular}"/>
+
+        <custom:CustomEntry
+            Margin="15,7"
+            HorizontalOptions="FillAndExpand"
+            BorderColor="Black"
+            CornerRadius="15"
+            BorderThickness="1"
+            ClearButtonVisibility="WhileEditing"
+            TextColor="Black"/>
+
+        <Label
+            x:Name="lastNameLabel"
+            Text="Last Name"
+            Margin="15,7"
+            FontSize="15"
+            HorizontalOptions="Start"
+            HorizontalTextAlignment="Start"
+            TextColor="Black"
+            FontFamily="{OnPlatform Android=RobotoRegular, iOS=HelveticaNeueRegular}"/>
+
+        <custom:CustomEntry
+            Margin="15,7"
+            HorizontalOptions="FillAndExpand"
+            BorderColor="Black"
+            CornerRadius="15"
+            BorderThickness="1"
+            ClearButtonVisibility="Never"
+            TextColor="Black"/>
+
+        <Label
+            x:Name="dobLabel"
+            Text="Date of Birth"
+            Margin="15,7"
+            FontSize="15"
+            HorizontalOptions="Start"
+            HorizontalTextAlignment="Start"
+            TextColor="Black"
+            FontFamily="{OnPlatform Android=RobotoRegular, iOS=HelveticaNeueRegular}"/>
+
+        <custom:CustomEntry
+            Margin="15,7"
+            HorizontalOptions="FillAndExpand"
+            BorderColor="Black"
+            CornerRadius="15"
+            BorderThickness="1"
+            ClearButtonVisibility="WhileEditing"
+            TextColor="Black"
+            />
+
+        <Button
+            Text="Next"
+            TextColor="White"
+            BackgroundColor="{StaticResource Primary}"
+            CornerRadius="20"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Margin="15,35"
+            WidthRequest="250"
+            FontFamily="{OnPlatform Android=RobotoBold, iOS=HelveticaNeueCondesedBold}"/>
+
+    </VerticalStackLayout>
+</ContentPage>
