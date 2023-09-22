@@ -102,6 +102,10 @@
                     <On Platform="iOS" Value="HelveticaNeueItalic"/>
                 </OnPlatform>
             </Label.FontFamily>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                    Command="{Binding ForgotPassword}"/>
+            </Label.GestureRecognizers>
         </Label>
 
         <Label

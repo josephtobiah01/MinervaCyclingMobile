@@ -6,7 +6,7 @@
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     xmlns:custom="clr-namespace:MinervaCyclingMobileApp.CustomControls"
     xmlns:fontAwesome="clr-namespace:FontAwesome"
-    xmlns:viewmodels="clr-namespace:MinervaCyclingMobileApp.ViewModels"
+    xmlns:viewmodels="clr-namespace:MinervaCyclingMobileApp.ViewModels.SignUp"
     x:DataType="viewmodels:NameAndDobPageViewModel"
     BackgroundColor="{AppThemeBinding Dark=white, Light=white}"
     Shell.NavBarIsVisible="False">
@@ -17,17 +17,44 @@
 
     <VerticalStackLayout>
 
-        <Image
-            Source="{FontImage FontFamily=FAS, Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowLeft}, Color=#000000}"
-            HorizontalOptions="Start"
+        <Grid
+            ColumnDefinitions="*,*"
             VerticalOptions="Start"
-            HeightRequest="20"
-            WidthRequest="20"
-            Margin="15,15">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding GoBack}"/>
-            </Image.GestureRecognizers>
-        </Image>
+            HorizontalOptions="FillAndExpand"
+            Margin="0"
+            Padding="0">
+
+            <Image
+                Grid.Column="0"
+                Source="{FontImage FontFamily=FAS, Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowLeft}, Color=#000000}"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                HeightRequest="20"
+                WidthRequest="20"
+                Margin="15,15">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoBack}"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label
+                Grid.Column="1"
+                Text="Step 1 of 3"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="Center"
+                Margin="15,15"
+                Style="{StaticResource LabelMedium}"
+                TextColor="{StaticResource SystemGrayDark}">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="RobotoMedium"/>
+                        <On Platform="iOS" Value="HelveticaNeueRegular"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </Grid>
+
+        
         
         <Label 
             Text="What is your name and date of birth?"
@@ -35,8 +62,8 @@
             HorizontalOptions="Start"
             Margin="15,25"
             TextColor="{StaticResource Primary}"
-            FontSize="Large"
-            FontFamily="{OnPlatform Android=RobotoBold, iOS=HelveticaNeueCondesedBold}"/>
+            Style="{StaticResource LabelLarge1}"
+            FontFamily="{OnPlatform Android=RobotoBlack, iOS=HelveticaNeueCondesedBold}"/>
 
         <Label
             x:Name="firstNameLabel"
@@ -105,7 +132,11 @@
             VerticalOptions="Center"
             Margin="15,35"
             WidthRequest="250"
-            FontFamily="{OnPlatform Android=RobotoBold, iOS=HelveticaNeueCondesedBold}"/>
+            HeightRequest="42"
+            CharacterSpacing="1"
+            FontSize="18"
+            FontFamily="{OnPlatform Android=RobotoBold, iOS=HelveticaNeueCondesedBold}"
+            Command="{Binding NextPage}"/>
 
     </VerticalStackLayout>
 </ContentPage>

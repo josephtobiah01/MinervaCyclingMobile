@@ -55,6 +55,13 @@ build_metadata.AdditionalFiles.TargetPath = Resources\Styles\MinvervaStyles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\MinvervaStyles.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/joseph.alulod/source/github_repo/MinervaCyclingMobileApp/Views/ForgotPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MinervaCyclingMobileApp.Views.ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/joseph.alulod/source/github_repo/MinervaCyclingMobileApp/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MinervaCyclingMobileApp.Views.LoginPage.xaml
@@ -62,11 +69,39 @@ build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/joseph.alulod/source/github_repo/MinervaCyclingMobileApp/Views/SignUp/CreatePasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MinervaCyclingMobileApp.Views.SignUp.CreatePasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SignUp\CreatePasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SignUp\CreatePasswordPage.xaml
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joseph.alulod/source/github_repo/MinervaCyclingMobileApp/Views/SignUp/EmailAndBdayPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MinervaCyclingMobileApp.Views.SignUp.EmailAndBdayPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SignUp\EmailAndBdayPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SignUp\EmailAndBdayPage.xaml
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/joseph.alulod/source/github_repo/MinervaCyclingMobileApp/Views/SignUp/NameAndDobPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MinervaCyclingMobileApp.Views.SignUp.NameAndDobPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SignUp\NameAndDobPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\SignUp\NameAndDobPage.xaml
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joseph.alulod/source/github_repo/MinervaCyclingMobileApp/Views/WarrantyCertification/CreateNewCertificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MinervaCyclingMobileApp.Views.WarrantyCertification.CreateNewCertificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\WarrantyCertification\CreateNewCertificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\WarrantyCertification\CreateNewCertificationPage.xaml
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joseph.alulod/source/github_repo/MinervaCyclingMobileApp/Views/WarrantyCertification/WarrantyCertificationTypePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MinervaCyclingMobileApp.Views.WarrantyCertification.WarrantyCertificationTypePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\WarrantyCertification\WarrantyCertificationTypePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\WarrantyCertification\WarrantyCertificationTypePage.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/joseph.alulod/source/github_repo/MinervaCyclingMobileApp/Main.razor]

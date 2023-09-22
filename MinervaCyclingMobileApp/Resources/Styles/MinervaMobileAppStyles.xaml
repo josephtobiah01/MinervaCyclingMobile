@@ -19,6 +19,7 @@
     <Color x:Key="SystemBlue">#007AFF</Color>
     <Color x:Key="SystemGreen">#34C759</Color>
     <Color x:Key="SystemIndigo">#5856D6</Color>
+    <Color x:Key="SystemIndigo1">#4B0082</Color>
     <Color x:Key="SystemOrange">#FF9500</Color>
     <Color x:Key="SystemPink">#FF2D55</Color>
     <Color x:Key="SystemPurple">#AF52DE</Color>
@@ -72,18 +73,30 @@
     </Style>
 
     <Style x:Key="LabelMicro" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontSize" Value="Micro"/>
+        <Setter Property="FontSize" Value="10"/>
     </Style>
     <Style x:Key="LabelSmall" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontSize" Value="Small"/>
+        <Setter Property="FontSize" Value="12"/>
     </Style>
 
     <Style x:Key="LabelMedium" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="FontSize" Value="15"/>
     </Style>
 
     <Style x:Key="LabelLarge" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
-        <Setter Property="FontSize" Value="Large"/>
+        <Setter Property="FontSize" Value="18"/>
+    </Style>
+
+    <Style x:Key="LabelLarge1" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+        <Setter Property="FontSize" Value="21"/>
+    </Style>
+
+    <Style x:Key="LabelLarge2" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+        <Setter Property="FontSize" Value="24"/>
+    </Style>
+
+    <Style x:Key="LabelLarge3" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+        <Setter Property="FontSize" Value="27"/>
     </Style>
 
     <Style x:Key="ButtonOutline" TargetType="Button">

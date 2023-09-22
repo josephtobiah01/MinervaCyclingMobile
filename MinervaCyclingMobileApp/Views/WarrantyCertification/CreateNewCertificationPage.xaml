@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MinervaCyclingMobileApp.Views.WarrantyCertification.CreateNewCertificationPage"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:custom="clr-namespace:MinervaCyclingMobileApp.CustomControls"
+    xmlns:fontAwesome="clr-namespace:FontAwesome"
+    xmlns:dx="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+    xmlns:viewmodels="clr-namespace:MinervaCyclingMobileApp.ViewModels.WarrantyCertification"
+    x:DataType="viewmodels:CreateNewCertificationPageViewModel"
+    BackgroundColor="{AppThemeBinding Dark=white, Light=white}"
+    Shell.NavBarIsVisible="False">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{AppThemeBinding Dark=white, Light=white}" StatusBarStyle="DarkContent"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout>
+
+        <Image
+            Grid.Column="0"
+            Source="{FontImage FontFamily=FAS, Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowLeft}, Color=#000000}"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            HeightRequest="20"
+            WidthRequest="20"
+            Margin="15,15">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoBack}"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Label 
+            Text="Let's create a new certification for your bike"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="15,25"
+            TextColor="{StaticResource Primary}"
+            Style="{StaticResource LabelLarge1}"
+            FontFamily="{OnPlatform Android=RobotoBlack, iOS=HelveticaNeueCondesedBold}"/>
+
+        <Label
+            
+            Text="Where was it purchased?"
+            Margin="15,10,15,20"
+            FontSize="15"
+            HorizontalOptions="Start"
+            HorizontalTextAlignment="Start"
+            TextColor="Black"
+            FontFamily="{OnPlatform Android=RobotoRegular, iOS=HelveticaNeueRegular}"/>
+
+        <custom:CustomEntry
+            Placeholder="Please select a shop"
+            FontAttributes="Italic"
+            PlaceholderColor="Gray"
+            BorderThickness="1"
+            BorderColor="Black"
+            MaximumWidthRequest="250"
+            BackgroundColor="White"
+            CornerRadius="20">
+            <custom:CustomEntry.GestureRecognizers>
+                <TapGestureRecognizer
+                    Command="{Binding OpenShopsSheet}"/>
+            </custom:CustomEntry.GestureRecognizers>
+        </custom:CustomEntry>
+
+        <dx:BottomSheet
+            State="{Binding OpenShopsSheetState}"
+            GrabberColor="White">
+
+            <!--<Label
+                Text="YO!"
+                HorizontalOptions='Center'
+                VerticalOptions="Center"
+                Style="{StaticResource LabelLarge1}"/>-->
+            
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!--<SearchBar Grid.Row="0" BackgroundColor="White" Placeholder="{Binding SearchPlaceHolder}"
+               Text="{Binding SearchBarText}"/>-->
+
+                <CollectionView
+                    Grid.Row="1" 
+                    SelectionMode="None" 
+                    ItemsSource="{Binding Shops}"
+                    >
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <VerticalStackLayout Padding="5" Margin="5,1">
+                                <!--<HorizontalStackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding BindingContext., Source={x:Reference parent}}" CommandParameter="{Binding .}"/>
+                                </HorizontalStackLayout.GestureRecognizers>-->
+                                <Label Text="{Binding .}" 
+                                       FontSize="Medium" 
+                                       HorizontalTextAlignment="Start" 
+                                       VerticalTextAlignment="Center"
+                                       TextColor="Black"
+                                       FontFamily="{OnPlatform Android=RobotoRegular, iOS=HelveticaNeueRegular}"
+                                       Style="{StaticResource LabelLarge}"/>
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+
+        </dx:BottomSheet>
+
+        <!--<Picker
+            TextColor="Black"
+            TitleColor="Black"
+            HorizontalTextAlignment="Center"
+            
+            BackgroundColor="White"
+            Title="Select a Shop"
+            
+            HorizontalOptions="FillAndExpand"
+            MaximumWidthRequest="300"
+            Margin="10,15"/>
+
+        <custom:CustomPicker
+            Title="Select a shop"
+            TextColor="Black"
+            TitleColor="Black"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            BorderColor="Green"
+            BorderThickness="1"
+            CornerRadius="20"
+            WidthRequest="200"
+            HeightRequest="80"
+            RightImage="downarrow"
+            RightImageHeight="12"
+            RightImageWidth="12"
+            BackgroundColor="White"
+            HorizontalOptions="CenterAndExpand"/>-->
+
+    </VerticalStackLayout>
+</ContentPage>

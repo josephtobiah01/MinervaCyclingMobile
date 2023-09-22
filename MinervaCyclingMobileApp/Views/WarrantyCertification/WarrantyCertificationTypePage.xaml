@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MinervaCyclingMobileApp.Views.WarrantyCertification.WarrantyCertificationTypePage"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:custom="clr-namespace:MinervaCyclingMobileApp.CustomControls"
+    xmlns:fontAwesome="clr-namespace:FontAwesome"
+    xmlns:viewmodels="clr-namespace:MinervaCyclingMobileApp.ViewModels.WarrantyCertification"
+    x:DataType="viewmodels:WarrantyCertificationTypePageViewModel"
+    BackgroundColor="{AppThemeBinding Dark=white, Light=white}"
+    Shell.NavBarIsVisible="False">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{AppThemeBinding Dark=white, Light=white}" StatusBarStyle="DarkContent"/>
+    </ContentPage.Behaviors>
+    
+    <VerticalStackLayout>
+
+        <Image
+            Grid.Column="0"
+            Source="{FontImage FontFamily=FAS, Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowLeft}, Color=#000000}"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            HeightRequest="20"
+            WidthRequest="20"
+            Margin="15,15">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoBack}"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Label 
+             Text="Choose an option"
+             VerticalOptions="Start" 
+             HorizontalOptions="Start"
+             Margin="15,25"
+             TextColor="{StaticResource SystemBlue}"
+             Style="{StaticResource LabelLarge1}"
+             FontFamily="{OnPlatform Android=RobotoBlack, iOS=HelveticaNeueCondesedBold}"/>
+
+        <Button
+            Text="Create a new Warranty Certification"
+            TextColor="White"
+            BackgroundColor="{StaticResource Primary}"
+            CornerRadius="20"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            Margin="20"
+            
+            HeightRequest="80"
+            CharacterSpacing="1"
+            FontSize="18"
+            FontFamily="{OnPlatform Android=RobotoBold, iOS=HelveticaNeueCondesedBold}"/>
+
+        <Button
+            Text="Add an existing Warranty Certification"
+            TextColor="White"
+            BackgroundColor="{StaticResource Primary}"
+            CornerRadius="20"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            Margin="20"
+            
+            HeightRequest="80"
+            CharacterSpacing="1"
+            FontSize="18"
+            FontFamily="{OnPlatform Android=RobotoBold, iOS=HelveticaNeueCondesedBold}"/>
+
+    </VerticalStackLayout>
+</ContentPage>

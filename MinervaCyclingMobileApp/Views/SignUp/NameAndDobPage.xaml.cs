@@ -1,4 +1,4 @@
-using MinervaCyclingMobileApp.ViewModels;
+using MinervaCyclingMobileApp.ViewModels.SignUp;
 
 namespace MinervaCyclingMobileApp.Views.SignUp;
 

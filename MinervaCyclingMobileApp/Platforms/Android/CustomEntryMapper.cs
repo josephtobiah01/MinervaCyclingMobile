@@ -1,19 +1,25 @@
-﻿using Android.Graphics.Drawables;
+﻿using Android.Content;
+using Android.Graphics.Drawables;
 using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 using Microsoft.Maui.Controls.Platform;
 using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
 using MinervaCyclingMobileApp.CustomControls;
 
-namespace MinervaCyclingMobileApp.Platforms
+namespace MinervaCyclingMobileApp.Platforms.Android
+
 {
-    public static class CustomEntryMapper
+    public class CustomEntryMapper : EntryHandler
     {
+        public CustomEntryMapper() : base(new PropertyMapper<CustomEntry>())
+        {
+        }
+
         public static void Map(IElementHandler handler, IElement view)
         {
             if (view is CustomEntry)
             {
-                var casted = (EntryHandler)handler;
+                var casted = (EntryHandler)handler; 
                 var viewData = (CustomEntry)view;
 
                 var gd = new GradientDrawable();

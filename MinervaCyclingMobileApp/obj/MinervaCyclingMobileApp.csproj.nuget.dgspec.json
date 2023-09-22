@@ -24,9 +24,7 @@
         ],
         "originalTargetFrameworks": [
           "net7.0-android",
-          "net7.0-ios",
-          "net7.0-maccatalyst",
-          "net7.0-windows10.0.19041.0"
+          "net7.0-ios"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -41,14 +39,6 @@
           },
           "net7.0-ios16.1": {
             "targetAlias": "net7.0-ios",
-            "projectReferences": {}
-          },
-          "net7.0-maccatalyst16.1": {
-            "targetAlias": "net7.0-maccatalyst",
-            "projectReferences": {}
-          },
-          "net7.0-windows10.0.19041": {
-            "targetAlias": "net7.0-windows10.0.19041.0",
             "projectReferences": {}
           }
         },
@@ -69,6 +59,22 @@
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
               "version": "[5.3.0, )"
+            },
+            "DevExpress.Data": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Maui.Controls": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Maui.Core": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Maui.Editors": {
+              "target": "Package",
+              "version": "[23.1.5, )"
             },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
@@ -103,6 +109,14 @@
               "target": "Package",
               "version": "[7.0.92, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Maui.Picker": {
+              "target": "Package",
+              "version": "[23.1.36, )"
+            },
+            "Syncfusion.Maui.Popup": {
+              "target": "Package",
+              "version": "[23.1.36, )"
             },
             "Xamarin.Android.Glide": {
               "target": "Package",
@@ -201,6 +215,22 @@
               "target": "Package",
               "version": "[5.3.0, )"
             },
+            "DevExpress.Data": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Maui.Controls": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Maui.Core": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Maui.Editors": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[7.0.92, )",
@@ -234,6 +264,14 @@
               "target": "Package",
               "version": "[7.0.92, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Maui.Picker": {
+              "target": "Package",
+              "version": "[23.1.36, )"
+            },
+            "Syncfusion.Maui.Popup": {
+              "target": "Package",
+              "version": "[23.1.36, )"
             }
           },
           "imports": [
@@ -265,187 +303,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
-        },
-        "net7.0-maccatalyst16.1": {
-          "targetAlias": "net7.0-maccatalyst",
-          "dependencies": {
-            "CommunityToolkit.Maui": {
-              "target": "Package",
-              "version": "[5.3.0, )"
-            },
-            "CommunityToolkit.Maui.Core": {
-              "target": "Package",
-              "version": "[5.3.0, )"
-            },
-            "Microsoft.AspNetCore.Components.WebView.Maui": {
-              "target": "Package",
-              "version": "[7.0.92, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.Maui.Graphics": {
-              "target": "Package",
-              "version": "[7.0.92, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "xamarinios10",
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.MacCatalyst": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Controls": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Core": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Essentials": {
-              "privateAssets": "all"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
-        },
-        "net7.0-windows10.0.19041": {
-          "targetAlias": "net7.0-windows10.0.19041.0",
-          "dependencies": {
-            "CommunityToolkit.Maui": {
-              "target": "Package",
-              "version": "[5.3.0, )"
-            },
-            "CommunityToolkit.Maui.Core": {
-              "target": "Package",
-              "version": "[5.3.0, )"
-            },
-            "Microsoft.AspNetCore.Components.WebView.Maui": {
-              "target": "Package",
-              "version": "[7.0.92, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.Maui.Graphics": {
-              "target": "Package",
-              "version": "[7.0.92, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
-              "target": "Package",
-              "version": "[7.0.92, )",
-              "autoReferenced": true
-            },
-            "Microsoft.WindowsAppSDK": {
-              "target": "Package",
-              "version": "[1.2.221209.1, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
-            },
-            {
-              "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.29, 10.0.19041.29]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.Maui.Controls": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Core": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Essentials": {
-              "privateAssets": "all"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Windows.SDK.NET.Ref": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -462,12 +319,6 @@
           "#import": []
         },
         "iossimulator-x64": {
-          "#import": []
-        },
-        "maccatalyst-x64": {
-          "#import": []
-        },
-        "win10-x64": {
           "#import": []
         }
       }

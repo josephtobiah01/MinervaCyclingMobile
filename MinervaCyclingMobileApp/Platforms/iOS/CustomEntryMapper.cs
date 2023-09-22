@@ -4,10 +4,13 @@ using Microsoft.Maui.Platform;
 using MinervaCyclingMobileApp.CustomControls;
 using UIKit;
 
-namespace MinervaCyclingMobileApp.Platforms
+namespace MinervaCyclingMobileApp.Platforms.iOS
 {
-    public static class CustomEntryMapper
+    public class CustomEntryMapper : EntryHandler
     {
+        public CustomEntryMapper() : base(new PropertyMapper<CustomEntry>())
+        {
+        }
         public static void Map(IElementHandler handler, IElement view)
         {
             if (view is CustomEntry)

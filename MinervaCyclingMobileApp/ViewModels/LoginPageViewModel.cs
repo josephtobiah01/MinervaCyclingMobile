@@ -1,4 +1,5 @@
 ﻿using MinervaCyclingMobileApp.Interfaces;
+using MinervaCyclingMobileApp.Views;
 using MinervaCyclingMobileApp.Views.SignUp;
 
 namespace MinervaCyclingMobileApp.ViewModels
@@ -19,6 +20,7 @@ namespace MinervaCyclingMobileApp.ViewModels
 
         public Command SignUp { get; set; }
         public Command Login { get; set; }
+        public Command ForgotPassword { get; set; }
         public string Email
         {
             get { return _email; }
@@ -44,8 +46,15 @@ namespace MinervaCyclingMobileApp.ViewModels
 
             SignUp = new Command(SignUpCommand);
             Login = new Command(LoginCommand);
-            _authenticationService = authenticationService;
+            ForgotPassword = new Command(ForgotPasswordCommand);
         }
+
+        
+
+
+        #endregion Constructor
+
+        #region Methods
 
         private async void LoginCommand()
         {
@@ -61,15 +70,17 @@ namespace MinervaCyclingMobileApp.ViewModels
             }
         }
 
-
-        #endregion Constructor
-
-        #region Methods
-
         private void SignUpCommand()
         {
             _navigationService.NavigateTo(nameof(NameAndDobPage));
         }
+
+        private void ForgotPasswordCommand()
+        {
+            _navigationService.NavigateTo(nameof(ForgotPasswordPage));
+        }
+
+
         #endregion Methods
     }
 }

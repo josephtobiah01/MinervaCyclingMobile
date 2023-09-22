@@ -1,12 +1,16 @@
-﻿using MinervaCyclingMobileApp.Services;
-using CommunityToolkit.Maui;
+﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 using MinervaCyclingMobileApp.CustomControls;
 using MinervaCyclingMobileApp.Data;
 using MinervaCyclingMobileApp.Interfaces;
+using MinervaCyclingMobileApp.Services;
+using MinervaCyclingMobileApp.ViewModels;
+using MinervaCyclingMobileApp.ViewModels.SignUp;
+using MinervaCyclingMobileApp.ViewModels.WarrantyCertification;
 using MinervaCyclingMobileApp.Views;
 using MinervaCyclingMobileApp.Views.SignUp;
-using MinervaCyclingMobileApp.ViewModels;
+using MinervaCyclingMobileApp.Views.WarrantyCertification;
+using DevExpress.Maui;
 
 namespace MinervaCyclingMobileApp
 {
@@ -36,7 +40,20 @@ namespace MinervaCyclingMobileApp
                     fonts.AddFont("faregular.ttf", "FAR");
                     fonts.AddFont("fasolid.ttf", "FAS");
                     fonts.AddFont("fabrands.ttf", "FAB");
+                })
+                .UseDevExpress()
+                .ConfigureMauiHandlers((handlers) => 
+                {
+//#if ANDROID
+
+//                    handlers.AddHandler(typeof(CustomEntry), typeof(MinervaCyclingMobileApp.Platforms.Android.CustomEntryMapper));
+//#elif iOS
+//                    handlers.AddHandler(typeof(CustomEntry), typeof(MinervaCyclingMobileApp.Platforms.iOS.CustomEntryMapper))
+
+//#endif
                 });
+                
+            
 
             builder.Services.AddMauiBlazorWebView();
 
@@ -44,13 +61,28 @@ namespace MinervaCyclingMobileApp
 		builder.Services.AddBlazorWebViewDeveloperTools();
 		builder.Logging.AddDebug();
 #endif
+
+
             Microsoft.Maui.Handlers.ElementHandler.ElementMapper.AppendToMapping("Classic", (handler, view) =>
             {
                 if (view is CustomEntry)
                 {
-                    Platforms.CustomEntryMapper.Map(handler, view);
+#if ANDROID
+                    Platforms.Android.CustomEntryMapper.Map(handler, view);
+#elif iOS
+                    Platforms.iOS.CustomEntryMapper.Map(handler, view);
+#endif
+                }
+                else if (view is CustomPicker)
+                {
+#if ANDROID
+                    Platforms.Android.CustomPickerMapper.Map(handler, view);
+#elif iOS
+                    Platforms.iOS.CustomPickerMapper.Map(handler, view);
+#endif
                 }
             });
+
 
             SetupServices(builder.Services);
             RegisterNavigation();
@@ -63,6 +95,21 @@ namespace MinervaCyclingMobileApp
             builder.Services.AddTransient<NameAndDobPage>();
             builder.Services.AddTransient<NameAndDobPageViewModel>();
 
+            builder.Services.AddTransient<EmailAndBdayPage>();
+            builder.Services.AddTransient<EmailAndBdayPageViewModel>();
+
+            builder.Services.AddTransient<ForgotPasswordPage>();
+            builder.Services.AddTransient<ForgotPasswordPageViewModel>();
+
+            builder.Services.AddTransient<CreatePasswordPage>();
+            builder.Services.AddTransient<CreatePasswordPageViewModel>();
+
+            builder.Services.AddTransient<WarrantyCertificationTypePage>();
+            builder.Services.AddTransient<WarrantyCertificationTypePageViewModel>();
+
+            builder.Services.AddTransient<CreateNewCertificationPage>();
+            builder.Services.AddTransient<CreateNewCertificationPageViewModel>();
+
             return builder.Build();
         }
 
@@ -70,6 +117,7 @@ namespace MinervaCyclingMobileApp
         {
             services.AddSingleton<INavigationService, NavigationService>();
             services.AddSingleton<IAuthenticationService, AuthenticationService>();
+            services.AddSingleton<IGetShopsService, GetShopsService>();
         }
 
 
@@ -77,6 +125,11 @@ namespace MinervaCyclingMobileApp
         {
             RegisterForNavigation.Register<LoginPage>();
             RegisterForNavigation.Register<NameAndDobPage>();
+            RegisterForNavigation.Register<EmailAndBdayPage>();
+            RegisterForNavigation.Register<CreatePasswordPage>();
+            RegisterForNavigation.Register<ForgotPasswordPage>();
+            RegisterForNavigation.Register<WarrantyCertificationTypePage>();
+            RegisterForNavigation.Register<CreateNewCertificationPage>();
 
         }
     }

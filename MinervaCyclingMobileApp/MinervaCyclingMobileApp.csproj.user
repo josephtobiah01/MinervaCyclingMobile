@@ -26,10 +26,25 @@
     <MauiXaml Update="Resources\Styles\MinervaMobileAppStyles.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\ForgotPasswordPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\SignUp\CreatePasswordPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\SignUp\EmailAndBdayPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\SignUp\NameAndDobPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\WarrantyCertification\CreateNewCertificationPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\WarrantyCertification\WarrantyCertificationTypePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

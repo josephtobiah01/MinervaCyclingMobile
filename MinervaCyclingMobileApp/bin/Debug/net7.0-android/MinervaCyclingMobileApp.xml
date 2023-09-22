@@ -4,11 +4,6 @@
         <name>MinervaCyclingMobileApp</name>
     </assembly>
     <members>
-        <member name="P:MinervaCyclingMobileApp.CustomControls.CustomEntry.Padding">
-            <summary>
-            This property cannot be changed at runtime in iOS.
-            </summary>
-        </member>
         <member name="M:MinervaCyclingMobileApp.ViewModels.ViewModelBase.ShowAlert(System.String,System.String,System.String)">
             <summary>
             "Fire and forget". Method returns BEFORE showing alert.

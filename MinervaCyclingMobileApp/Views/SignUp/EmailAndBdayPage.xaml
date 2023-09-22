@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MinervaCyclingMobileApp.Views.SignUp.EmailAndBdayPage"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:custom="clr-namespace:MinervaCyclingMobileApp.CustomControls"
+    xmlns:fontAwesome="clr-namespace:FontAwesome"
+    xmlns:viewmodels="clr-namespace:MinervaCyclingMobileApp.ViewModels.SignUp"
+    x:DataType="viewmodels:EmailAndBdayPageViewModel"
+    BackgroundColor="{AppThemeBinding Dark=white, Light=white}"
+    Shell.NavBarIsVisible="False">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{AppThemeBinding Dark=white, Light=white}" StatusBarStyle="DarkContent"/>
+    </ContentPage.Behaviors>
+    
+    <VerticalStackLayout>
+
+        <Grid
+            ColumnDefinitions="*,*"
+            VerticalOptions="Start"
+            HorizontalOptions="FillAndExpand"
+            Margin="0"
+            Padding="0">
+
+            <Image
+                Grid.Column="0"
+                Source="{FontImage FontFamily=FAS, Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowLeft}, Color=#000000}"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                HeightRequest="20"
+                WidthRequest="20"
+                Margin="15,15">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoBack}"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label
+                Grid.Column="1"
+                Text="Step 2 of 3"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="Center"
+                Margin="15,15"
+                Style="{StaticResource LabelMedium}"
+                TextColor="{StaticResource SystemGrayDark}">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="RobotoMedium"/>
+                        <On Platform="iOS" Value="HelveticaNeueRegular"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </Grid>
+
+        <Label 
+            Text="What is your Email and Birthday?"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="15,25"
+            TextColor="{StaticResource Primary}"
+            Style="{StaticResource LabelLarge1}"
+            FontFamily="{OnPlatform Android=RobotoBlack, iOS=HelveticaNeueCondesedBold}"/>
+
+        <Grid
+            ColumnDefinitions="*,*"
+            RowDefinitions="1*,1.75*"
+            Margin="2"
+            Padding="0"
+            ColumnSpacing="5"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center">
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Margin="3,5"
+                Text="Email"
+                TextColor="Black"
+                FontFamily="{OnPlatform Android=RobotoRegular, iOS=HelveticaNeueRegular}"/>
+
+            <custom:CustomEntry
+                Grid.Row="1"
+                Grid.Column="0"
+                Placeholder="Email"
+                ClearButtonVisibility="WhileEditing"
+                CornerRadius="15"
+                BorderThickness="1"
+                BorderColor="{StaticResource SystemIndigo1}"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center"
+                Margin="5,0"/>
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Margin="3,5"
+                Text="Birthday"
+                TextColor="Black"
+                FontFamily="{OnPlatform Android=RobotoRegular, iOS=HelveticaNeueRegular}"/>
+
+            <custom:CustomEntry
+                Grid.Row="1"
+                Grid.Column="1"
+                Placeholder="Birthday"
+                ClearButtonVisibility="WhileEditing"
+                CornerRadius="15"
+                BorderThickness="1"
+                BorderColor="{StaticResource SystemIndigo1}"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center"
+                Margin="5,0"/>
+
+        </Grid>
+
+        <Button
+            Text="Next"
+            TextColor="White"
+            BackgroundColor="{StaticResource Primary}"
+            CornerRadius="20"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Margin="15,35"
+            WidthRequest="250"
+            HeightRequest="42"
+            CharacterSpacing="1"
+            FontSize="18"
+            FontFamily="{OnPlatform Android=RobotoBold, iOS=HelveticaNeueCondesedBold}"
+            Command="{Binding NextPage}"/>
+
+    </VerticalStackLayout>
+</ContentPage>
