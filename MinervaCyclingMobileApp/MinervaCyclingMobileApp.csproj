@@ -96,7 +96,9 @@
       <None Remove="Resources\Fonts\Roboto-Regular.ttf" />
       <None Remove="Resources\Fonts\Roboto-Thin.ttf" />
       <None Remove="Resources\Fonts\Roboto-ThinItalic.ttf" />
+      <None Remove="Resources\Images\camerabike.png" />
       <None Remove="Resources\Images\downarrow.png" />
+      <None Remove="Resources\Images\fileexplorer.png" />
       <None Remove="Resources\Images\minervalogo.png" />
       <None Remove="Shared\MainLayout.razor.css" />
       <None Remove="Shared\NavMenu.razor.css" />
@@ -112,10 +114,16 @@
       <Compile Include="Helpers\BindableBase.cs" />
       <Compile Include="Helpers\FontAwesome.cs" />
       <Compile Include="Interfaces\IAuthenticationService.cs" />
+      <Compile Include="Interfaces\IGetBikeIssuesService.cs" />
+      <Compile Include="Interfaces\IGetRepairCentersService.cs" />
       <Compile Include="Interfaces\IGetShopsService.cs" />
       <Compile Include="Interfaces\INavigationService.cs" />
+      <Compile Include="Interfaces\ISelectedImageService.cs" />
       <Compile Include="MainPage.xaml.cs" />
       <Compile Include="MauiProgram.cs" />
+      <Compile Include="Models\ApiRequest\RepairCenterRequest.cs" />
+      <Compile Include="Models\ApiResponse\BikeIssuesResponse.cs" />
+      <Compile Include="Models\ApiResponse\RepairCenterResponse.cs" />
       <Compile Include="Models\ApiResponse\ShopDetailsResponse.cs" />
       <Compile Include="Models\ApiResponse\UserDetailsResponse.cs" />
       <Compile Include="Models\UserDetails.cs" />
@@ -129,8 +137,11 @@
       <Compile Include="Platforms\iOS\Program.cs" />
       <Compile Include="Resources\Styles\MinervaMobileAppStyles.xaml.cs" />
       <Compile Include="Services\AuthenticationService.cs" />
+      <Compile Include="Services\GetBikeIssuesService.cs" />
+      <Compile Include="Services\GetRepairCentersService.cs" />
       <Compile Include="Services\GetShopsService.cs" />
       <Compile Include="Services\NavigationService.cs" />
+      <Compile Include="Services\SelectedImageService.cs" />
       <Compile Include="ViewModels\ForgotPasswordPageViewModel.cs" />
       <Compile Include="ViewModels\LoginPageViewModel.cs" />
       <Compile Include="ViewModels\SignUp\CreatePasswordPageViewModel.cs" />
@@ -153,6 +164,7 @@
         <PackageReference Include="CommunityToolkit.Maui.Core" Version="5.3.0" />
         <PackageReference Include="DevExpress.Data" Version="23.1.5" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+        <PackageReference Include="SkiaSharp" Version="2.88.6" />
         <PackageReference Include="Syncfusion.Maui.Picker" Version="23.1.36" />
         <PackageReference Include="Syncfusion.Maui.Popup" Version="23.1.36" />
     </ItemGroup>

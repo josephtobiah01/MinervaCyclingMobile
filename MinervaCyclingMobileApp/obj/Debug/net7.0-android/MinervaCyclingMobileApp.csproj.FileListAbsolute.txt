@@ -1179,3 +1179,7 @@ C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobile
 C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-android\resizetizer\r\drawable\camerabike.png
+C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-android\resizetizer\r\drawable\fileexplorer.png
+C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-android\android\assets\SkiaSharp.dll
+C:\Users\joseph.alulod\source\repos\MinervaCyclingMobileApp\MinervaCyclingMobileApp\obj\Debug\net7.0-android\android\assets\SkiaSharp.pdb

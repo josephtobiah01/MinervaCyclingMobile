@@ -9,4 +9,6 @@ public partial class CreateNewCertificationPage : ContentPage
 		InitializeComponent();
 		this.BindingContext = vm;
 	}
+
+    
 }

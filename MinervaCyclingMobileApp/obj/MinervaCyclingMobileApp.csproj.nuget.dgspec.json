@@ -110,6 +110,10 @@
               "version": "[7.0.92, )",
               "autoReferenced": true
             },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.6, )"
+            },
             "Syncfusion.Maui.Picker": {
               "target": "Package",
               "version": "[23.1.36, )"
@@ -264,6 +268,10 @@
               "target": "Package",
               "version": "[7.0.92, )",
               "autoReferenced": true
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.6, )"
             },
             "Syncfusion.Maui.Picker": {
               "target": "Package",

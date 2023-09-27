@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s0MRrHW+WQ8LfaBK3NLQ2QhBEX982uWxjofgk2qKwfBnTsNv8okbTq8qMhQr9j8kwSI7olKKYEh7rkcJHU1LHw==",
+  "dgSpecHash": "tM7sHu4q7Z5ma/Ccv+py5fVuOrDi9rXkujp1uhUdQm/wTFhrcZVzJpxsxhq3WV2f+pIRK3TEHTB6cnPPORjJlg==",
   "success": true,
   "projectFilePath": "C:\\Users\\joseph.alulod\\source\\github_repo\\MinervaCyclingMobileApp\\MinervaCyclingMobileApp.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,9 @@
     "C:\\Users\\joseph.alulod\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\joseph.alulod\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\joseph.alulod\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\joseph.alulod\\.nuget\\packages\\skiasharp\\2.88.6\\skiasharp.2.88.6.nupkg.sha512",
+    "C:\\Users\\joseph.alulod\\.nuget\\packages\\skiasharp.nativeassets.android\\2.88.6\\skiasharp.nativeassets.android.2.88.6.nupkg.sha512",
+    "C:\\Users\\joseph.alulod\\.nuget\\packages\\skiasharp.nativeassets.ios\\2.88.6\\skiasharp.nativeassets.ios.2.88.6.nupkg.sha512",
     "C:\\Users\\joseph.alulod\\.nuget\\packages\\syncfusion.licensing\\23.1.36\\syncfusion.licensing.23.1.36.nupkg.sha512",
     "C:\\Users\\joseph.alulod\\.nuget\\packages\\syncfusion.maui.core\\23.1.36\\syncfusion.maui.core.23.1.36.nupkg.sha512",
     "C:\\Users\\joseph.alulod\\.nuget\\packages\\syncfusion.maui.picker\\23.1.36\\syncfusion.maui.picker.23.1.36.nupkg.sha512",

@@ -4,6 +4,9 @@
 <dict>
   <key>UIAppFonts</key>
   <array>
+	<string>fabrands.ttf</string>
+	<string>faregular.ttf</string>
+	<string>fasolid.ttf</string>
 	<string>HelveticaNeue-CondensedBold.ttf</string>
 	<string>HelveticaNeue-Italic.ttf</string>
 	<string>HelveticaNeue-Regular.otf</string>

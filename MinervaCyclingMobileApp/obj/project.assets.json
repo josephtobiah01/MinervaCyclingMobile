@@ -692,6 +692,52 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          }
+        }
+      },
       "Syncfusion.Licensing/23.1.36": {
         "type": "package",
         "compile": {
@@ -3356,6 +3402,37 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-arm/native/libSkiaSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "Syncfusion.Licensing/23.1.36": {
         "type": "package",
         "compile": {
@@ -5982,6 +6059,37 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-arm64/native/libSkiaSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
       "Syncfusion.Licensing/23.1.36": {
@@ -8612,6 +8720,37 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-x64/native/libSkiaSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "Syncfusion.Licensing/23.1.36": {
         "type": "package",
         "compile": {
@@ -11240,6 +11379,37 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-x86/native/libSkiaSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "Syncfusion.Licensing/23.1.36": {
         "type": "package",
         "compile": {
@@ -13866,6 +14036,34 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
       "Syncfusion.Licensing/23.1.36": {
@@ -16515,6 +16713,60 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/ios/native/libSkiaSharp.framework/Info.plist": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/iossimulator/native/libSkiaSharp.framework/Info.plist": {
+            "assetType": "native",
+            "rid": "iossimulator"
+          },
+          "runtimes/iossimulator/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {
+            "assetType": "native",
+            "rid": "iossimulator"
+          },
+          "runtimes/iossimulator/native/libSkiaSharp.framework/libSkiaSharp": {
+            "assetType": "native",
+            "rid": "iossimulator"
+          }
+        }
+      },
       "Syncfusion.Licensing/23.1.36": {
         "type": "package",
         "compile": {
@@ -17449,6 +17701,34 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
+        }
+      },
       "Syncfusion.Licensing/23.1.36": {
         "type": "package",
         "compile": {
@@ -18345,6 +18625,34 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
       "Syncfusion.Licensing/23.1.36": {
@@ -19245,6 +19553,34 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
+        }
+      },
       "Syncfusion.Licensing/23.1.36": {
         "type": "package",
         "compile": {
@@ -20143,6 +20479,34 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
+        }
+      },
       "Syncfusion.Licensing/23.1.36": {
         "type": "package",
         "compile": {
@@ -21039,6 +21403,39 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "SkiaSharp/2.88.6": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "2.88.6"
+        },
+        "compile": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/2.88.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios13.6/_._": {}
+        },
+        "native": {
+          "runtimes/iossimulator/native/libSkiaSharp.framework/Info.plist": {},
+          "runtimes/iossimulator/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {},
+          "runtimes/iossimulator/native/libSkiaSharp.framework/libSkiaSharp": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
       "Syncfusion.Licensing/23.1.36": {
@@ -22631,6 +23028,128 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "SkiaSharp/2.88.6": {
+      "sha512": "wdfeBAQrEQCbJIRgAiargzP1Uy+0grZiG4CSgBnhAgcJTsPzlifIaO73JRdwIlT3TyBoeU9jEqzwFUhl4hTYnQ==",
+      "type": "package",
+      "path": "skiasharp/2.88.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "interactive-extensions/dotnet/SkiaSharp.DotNet.Interactive.dll",
+        "lib/monoandroid1.0/SkiaSharp.dll",
+        "lib/monoandroid1.0/SkiaSharp.pdb",
+        "lib/monoandroid1.0/SkiaSharp.xml",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.pdb",
+        "lib/net462/SkiaSharp.xml",
+        "lib/net6.0-android30.0/SkiaSharp.dll",
+        "lib/net6.0-android30.0/SkiaSharp.pdb",
+        "lib/net6.0-android30.0/SkiaSharp.xml",
+        "lib/net6.0-ios13.6/SkiaSharp.dll",
+        "lib/net6.0-ios13.6/SkiaSharp.pdb",
+        "lib/net6.0-ios13.6/SkiaSharp.xml",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.dll",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.pdb",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.xml",
+        "lib/net6.0-macos10.15/SkiaSharp.dll",
+        "lib/net6.0-macos10.15/SkiaSharp.pdb",
+        "lib/net6.0-macos10.15/SkiaSharp.xml",
+        "lib/net6.0-tizen7.0/SkiaSharp.dll",
+        "lib/net6.0-tizen7.0/SkiaSharp.pdb",
+        "lib/net6.0-tizen7.0/SkiaSharp.xml",
+        "lib/net6.0-tvos13.4/SkiaSharp.dll",
+        "lib/net6.0-tvos13.4/SkiaSharp.pdb",
+        "lib/net6.0-tvos13.4/SkiaSharp.xml",
+        "lib/net6.0/SkiaSharp.dll",
+        "lib/net6.0/SkiaSharp.pdb",
+        "lib/net6.0/SkiaSharp.xml",
+        "lib/netcoreapp3.1/SkiaSharp.dll",
+        "lib/netcoreapp3.1/SkiaSharp.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.pdb",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.pdb",
+        "lib/netstandard2.0/SkiaSharp.xml",
+        "lib/netstandard2.1/SkiaSharp.dll",
+        "lib/netstandard2.1/SkiaSharp.pdb",
+        "lib/netstandard2.1/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.pdb",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0.10240/SkiaSharp.dll",
+        "lib/uap10.0.10240/SkiaSharp.pdb",
+        "lib/uap10.0.10240/SkiaSharp.xml",
+        "lib/uap10.0.16299/SkiaSharp.dll",
+        "lib/uap10.0.16299/SkiaSharp.pdb",
+        "lib/uap10.0.16299/SkiaSharp.xml",
+        "lib/xamarinios1.0/SkiaSharp.dll",
+        "lib/xamarinios1.0/SkiaSharp.pdb",
+        "lib/xamarinios1.0/SkiaSharp.xml",
+        "lib/xamarinmac2.0/SkiaSharp.dll",
+        "lib/xamarinmac2.0/SkiaSharp.pdb",
+        "lib/xamarinmac2.0/SkiaSharp.xml",
+        "lib/xamarintvos1.0/SkiaSharp.dll",
+        "lib/xamarintvos1.0/SkiaSharp.pdb",
+        "lib/xamarintvos1.0/SkiaSharp.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.pdb",
+        "lib/xamarinwatchos1.0/SkiaSharp.xml",
+        "skiasharp.2.88.6.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Android/2.88.6": {
+      "sha512": "yFtWleVp7hRhSPuyEJPlTRsiEQANTHJuREcpIFiFG9bdGmYgAS5CMJXOiO67jyUT7v7vSj3Qk34I7P5FRm1wUg==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.android/2.88.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid1.0/SkiaSharp.NativeAssets.Android.targets",
+        "build/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets",
+        "buildTransitive/monoandroid1.0/SkiaSharp.NativeAssets.Android.targets",
+        "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets",
+        "lib/monoandroid1.0/_._",
+        "lib/net6.0-android30.0/_._",
+        "runtimes/android-arm/native/libSkiaSharp.so",
+        "runtimes/android-arm64/native/libSkiaSharp.so",
+        "runtimes/android-x64/native/libSkiaSharp.so",
+        "runtimes/android-x86/native/libSkiaSharp.so",
+        "skiasharp.nativeassets.android.2.88.6.nupkg.sha512",
+        "skiasharp.nativeassets.android.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.iOS/2.88.6": {
+      "sha512": "j+Nv2cKDb6YZDebtIWjaypG7rngEw7xLvB0WlCoIpUShop0jPLutoqiPx2r4FFt72egzVhUrUn/rlyL7EeYpTA==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.ios/2.88.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets",
+        "build/xamarinios1.0/SkiaSharp.NativeAssets.iOS.targets",
+        "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets",
+        "buildTransitive/xamarinios1.0/SkiaSharp.NativeAssets.iOS.targets",
+        "lib/net6.0-ios13.6/_._",
+        "lib/xamarinios1.0/_._",
+        "runtimes/ios/native/libSkiaSharp.framework/Info.plist",
+        "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp",
+        "runtimes/iossimulator/native/libSkiaSharp.framework/Info.plist",
+        "runtimes/iossimulator/native/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "runtimes/iossimulator/native/libSkiaSharp.framework/libSkiaSharp",
+        "skiasharp.nativeassets.ios.2.88.6.nupkg.sha512",
+        "skiasharp.nativeassets.ios.nuspec"
       ]
     },
     "Syncfusion.Licensing/23.1.36": {
@@ -25381,6 +25900,7 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.92",
+      "SkiaSharp >= 2.88.6",
       "Syncfusion.Maui.Picker >= 23.1.36",
       "Syncfusion.Maui.Popup >= 23.1.36",
       "Xamarin.Android.Glide >= 4.13.2.2",
@@ -25409,6 +25929,7 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.92",
+      "SkiaSharp >= 2.88.6",
       "Syncfusion.Maui.Picker >= 23.1.36",
       "Syncfusion.Maui.Popup >= 23.1.36"
     ]
@@ -25522,6 +26043,10 @@
             "target": "Package",
             "version": "[7.0.92, )",
             "autoReferenced": true
+          },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[2.88.6, )"
           },
           "Syncfusion.Maui.Picker": {
             "target": "Package",
@@ -25677,6 +26202,10 @@
             "target": "Package",
             "version": "[7.0.92, )",
             "autoReferenced": true
+          },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[2.88.6, )"
           },
           "Syncfusion.Maui.Picker": {
             "target": "Package",
