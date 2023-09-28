@@ -12,22 +12,22 @@ namespace MinervaCyclingMobileApp.Services
     {
         public async Task<ImageSource> UploadPhoto()
         {
-            // Check the permissions for accessing photos.
+            
             PermissionStatus status = await Permissions.CheckStatusAsync<Permissions.Photos>();
 
             if (status == PermissionStatus.Denied || status == PermissionStatus.Unknown || status == PermissionStatus.Disabled)
             {
-                // If permission is not granted, request it.
+                
                 status = await Permissions.RequestAsync<Permissions.Photos>();
 
                 if (status == PermissionStatus.Denied || status == PermissionStatus.Unknown || status == PermissionStatus.Disabled)
                 {
                     await App.Current.MainPage.DisplayAlert("Required", "You must allow the permission to get your image", "Ok");
-                    return null; // If still not granted, display an alert and return.
+                    return null; 
                 }
             }
 
-            // Here, you have permission. Use FilePicker to pick an image.
+            
             var result = await FilePicker.PickAsync(new PickOptions
             {
                 PickerTitle = "Select image(s) to send",
@@ -35,27 +35,23 @@ namespace MinervaCyclingMobileApp.Services
             });
 
             if (result == null)
-                return null; // If user didn't pick an image, return.
+                return null; 
 
             using (var stream = await result.OpenReadAsync())
             {
-                // Convert the stream to an MAUI image.
                 var image = Microsoft.Maui.Graphics.Platform.PlatformImage.FromStream(stream);
-
-                // If the image is too large, resize it.
+               
                 int maxImageSize = 1600;
                 if (image.Width > maxImageSize || image.Height > maxImageSize)
                 {
                     image = image.Downsize(maxImageSize, true);
                 }
-
-                // Convert the resized image to bytes with PNG format.
+              
                 byte[] bytes = await image.AsBytesAsync(ImageFormat.Png);
 
-                // Convert the bytes to a Base64 string.
                 string uploadImage = $"data:image/png;base64,{Convert.ToBase64String(bytes)}";
 
-                return uploadImage; // Return the Base64 string.
+                return uploadImage; 
             }
         }
 

@@ -120,6 +120,14 @@ namespace MinervaCyclingMobileApp
             services.AddSingleton<IGetShopsService, GetShopsService>();
             services.AddSingleton<ISelectedImageService, SelectedImageService>();
             services.AddSingleton<IGetBikeIssuesService, GetBikeIssuesService>();
+            services.AddSingleton<IGetShopPromosService, GetShopPromosService>();
+            services.AddSingleton<IGetRepairCentersService, GetRepairCentersService>();
+            services.AddSingleton<IGetCertificationsByUserService, GetCertificationsByUserService>();
+            services.AddSingleton<ICreateCertificationService, CreateCertificationService>();
+            services.AddSingleton<ICreateRequestService, CreateRequestService>();
+            services.AddSingleton<IGetRequestsService, GetRequestsService>();
+            services.AddSingleton<ICreateShopOrderService, CreateShopOrderService>();
+            services.AddSingleton<IGetOrdersService, GetOrdersService>();
         }
 
 

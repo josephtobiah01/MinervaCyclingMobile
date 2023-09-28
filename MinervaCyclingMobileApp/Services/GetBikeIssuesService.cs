@@ -11,7 +11,7 @@ namespace MinervaCyclingMobileApp.Services
 {
     public class GetBikeIssuesService : IGetBikeIssuesService
     {
-        public async Task<List<BikeIssuesResponse.BikeIssue>> GetBikeIssues()
+        public async Task<List<BikeIssue>> GetBikeIssues()
         {
             var response = await GetData();
 
@@ -25,7 +25,6 @@ namespace MinervaCyclingMobileApp.Services
             {
                 new BikeIssue { IssueID = "1", IssueName = "Flat Tire" },
                 new BikeIssue { IssueID = "2", IssueName = "Broken Chain" },
-                // ... add more mock data as needed
             };
 
             return Task.FromResult(bikeIssuesList);
